@@ -1,0 +1,18 @@
+tarteaucitron.init({
+  privacyUrl: "politique-confidentialite.html",
+  hashtag: "#tarteaucitron",
+  cookieName: "tarteaucitron",
+  orientation: "bottom",
+  cookieslist: true,
+  showIcon: true,
+  iconPosition: "BottomRight",
+  adblocker: false,
+  DenyAllCta: true,
+  AcceptAllCta: true,
+  highPrivacy: true,
+  handleBrowserDNTRequest: true,
+  removeCredit: false,
+  moreInfoLink: true,
+  useExternalCss: false,
+  readmoreLink: "politique-confidentialite.html",
+});
