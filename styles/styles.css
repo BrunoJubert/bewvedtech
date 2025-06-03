@@ -210,6 +210,11 @@ header p.webeco {
   max-width: fit-content; 
 }
 
+.offer i {
+  margin-right: 8px; /* ou la valeur de ton choix */
+}
+
+
 .toggle-details#devisBtn {
     background-color: var(--primary);
     color: white;
@@ -678,9 +683,9 @@ footer nav a:hover {
 }
 
 .policy-header {
-  margin-top: 2rem; /* Décale vers le bas */
-  text-align: center; /* Centre le texte */
-  margin-bottom: 2rem; /* Espace avant les cards */
+  margin-top: 2rem; 
+  text-align: center; 
+  margin-bottom: 2rem; 
 }
 
 .confidentialite .card {
@@ -814,7 +819,6 @@ footer nav a:hover {
       order: 3;
     }
     
-    /* Liens dans la nav */
     .footer-nav a {
       color: var(--light);
       text-decoration: underline;
@@ -826,7 +830,6 @@ footer nav a:hover {
       color: var(--light);
     }
     
-    /* Footer link portfolio */
     .footer-link {
       color: var(--light);
       text-decoration: underline;
@@ -844,7 +847,7 @@ footer nav a:hover {
     }
 
     .confidentialite {
-      max-width: 1000px; /* Plus large pour plus d’espace */
+      max-width: 1000px; 
       margin: 2rem auto;
       padding: 1rem 2rem;
   }
@@ -854,8 +857,8 @@ footer nav a:hover {
   }
   .card-wrapper {
       display: grid;
-      grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
-      gap: 2rem; /* Espace entre les cards */
+      grid-template-columns: repeat(2, 1fr); 
+      gap: 2rem; 
       margin-bottom: 3rem;
   }
   .card {
@@ -881,6 +884,5 @@ footer nav a:hover {
       background-color: var(--primary-dark);
   }
   
-
   }
 }
