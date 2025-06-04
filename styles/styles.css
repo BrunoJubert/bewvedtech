@@ -581,196 +581,185 @@
     font-style: italic;
   }
 
-  /* Footer */
-  footer {
-    background-color: var(--primary-dark);
-    color: white;
-    text-align: center;
-    padding: 2rem 1rem;
-    font-size: 0.9rem;
-  }
+ /* Footer */
+footer {
+  background-color: var(--primary-dark);
+  color: white;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
 
-  footer nav a {
-    color: var(--accent);
-    text-decoration: underline;
-    transition: color 0.3s ease;
-  }
+.footer-row {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
 
-  footer nav {
-    margin-bottom: 1.5rem;
-    margin-top: 1rem;
-  }
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
 
-  footer nav a:hover {
-    color: var(--light);
-  }
+.nav-separator {
+  color: var(--light);
+}
 
-  .footer-link {
-    display: inline-block;
-    color: var(--light);
-    margin-top: 1rem;
-  }
+.footer-link-container {
+  display: block;
+  text-align: center;
+  margin: 0;
+}
 
-  .footer-link:hover {
-    color: #fff;
-    text-decoration: underline;
-  }
+.footer-link {
+  color: var(--light);
+  text-decoration: underline;
+  font-weight: 600;
+}
 
-  .rgpd-info {
-    font-size: 0.9rem;
-    color: #666;
-    text-align: center;
-    margin: 1rem 0;
-    font-style: italic;
-    line-height: 1.4;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    background-color: #f8f9fa;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  }
-  .rgpd-info a {
-    color: var(--primary-dark);
-    text-decoration: underline;
-    font-weight: 500;
-    transition: color 0.2s;
-  }
-  .rgpd-info a:hover {
-    color: var(--primary);
-  }
-  .rgpd {
-    color: white;
-    text-decoration: none;
-    font-size: 0.95rem;
-    display: inline-block;
-    margin-top: 1rem;
-    text-decoration: underline;
-  }
+.footer-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
 
-  .footer-logo {
-    width: 100px;
-    height: auto;
-    margin-bottom: 1rem;
-  }
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 0.9rem;
+  color: var(--light);
+}
 
-  #starter,
-  #pro,
-  #master,
-  #maintenance,
-  #contact {
-    scroll-margin-top: 100px;
-  }
+footer nav a {
+  color: var(--accent);
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
 
-  .confidentialite {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem 1rem;
-    max-width: 800px;
-    margin: 0 auto;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-  }
+footer nav a:hover {
+  color: var(--light);
+}
 
-  .policy-header {
-    margin-top: 2rem;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  .policy-header h1 {
-    font-size: 2rem;
-    color: var(--primary-dark);
-    margin-bottom: 0.5rem;
-  }
+.rgpd {
+  color: var(--light);
+  text-decoration: underline;
+}
 
-  .confidentialite h2 {
-    font-size: 1.5rem;
-    color: var(--primary-dark);
-    margin-bottom: 1rem;
-  }
+#starter, #pro, #master, #maintenance, #contact {
+  scroll-margin-top: 100px;
+}
 
-  .confidentialite .card {
-    margin-bottom: 1.5rem;
-  }
+.confidentialite {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
 
-  .confidentialite .card:last-child {
-    margin-bottom: 0;
-  }
+.policy-header {
+  margin: 2rem 0;
+  text-align: center;
+}
 
-  .btn-retour {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin: 2rem auto 0 auto;
-    padding: 0.75rem 1.5rem;
-    background-color: var(--primary);
-    color: white;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s;
-    max-width: max-content;
-  }
+.policy-header h1 {
+  font-size: 2rem;
+  color: var(--primary-dark);
+  margin-bottom: 0.5rem;
+}
 
-  .btn-retour:hover {
-    background-color: var(--primary-dark);
-  }
+.confidentialite h2 {
+  font-size: 1.5rem;
+  color: var(--primary-dark);
+  margin-bottom: 1rem;
+}
 
-  .adress {
-    font-size: 1rem;
-    color: var(--primary-dark);
-    text-align: center;
-    margin-top: 1rem;
-    border-top: var(--primary-dark) 1px solid;
-    padding-top: 1rem;
-  }
+.confidentialite .card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
 
-  /* Responsive */
+.confidentialite .card {
+  min-height: 340px; /* même hauteur partout */
+  width: 100%;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.confidentialite .card:last-child {
+  margin-bottom: 0;
+}
+
+.btn-retour {
+  display: block; 
+  margin: 2rem auto 2rem auto;
+  width: fit-content; 
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.btn-retour:hover {
+  background-color: var(--primary-dark);
+}
+
+
+.adress {
+  font-size: 1rem;
+  color: var(--primary-dark);
+  text-align: center;
+  margin-top: 1rem;
+  border-top: var(--primary-dark) 1px solid;
+  padding-top: 1rem;
+}
+
+
   @media screen and (min-width: 601px) {
     header {
+      display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
       padding: 1rem 2rem;
       text-align: left;
     }
-
+  
     header h1 {
       margin-right: auto;
       flex-shrink: 0;
     }
-
+  
     header p.webeco {
       flex-grow: 1;
       text-align: center;
       margin: 0;
       font-size: 1.1rem;
     }
-
+  
     .hero h2 {
       font-size: 3rem;
       max-width: 700px;
     }
-
+  
     .hero p {
       font-size: 1.25rem;
       max-width: 700px;
     }
-
-    .card-wrapper {
-      flex-direction: row;
-      justify-content: center;
-      align-items: stretch;
-    }
-
-    .card-wrapper .card {
-      flex: 1;
-      max-width: 500px;
-    }
-
+  
+    /* Cards */
     .cards {
       display: flex;
       flex-wrap: wrap;
@@ -779,106 +768,96 @@
       max-width: 1200px;
       margin: 0 auto;
     }
-
-    .card {
-      width: 300px;
-      flex-shrink: 0;
-    }
-
-    .pack {
-      max-width: 800px;
-      margin: 3rem auto;
-      padding: 2rem;
-    }
-
-    #contact {
-      max-width: 800px;
-      margin: 3rem auto;
-      padding: 2rem;
-    }
-    .spacer {
-      flex-grow: 1;
-      max-height: 2rem;
-      width: 100%;
-    }
-    footer {
-      background-color: var(--primary-dark);
-      color: white;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      text-align: left;
-      gap: 1rem;
-    }
-
-    .footer-nav {
-      flex: 1 1 30%;
-      order: 1;
-    }
-
-    .footer-center {
-      flex: 1 1 30%;
-      text-align: center;
-      order: 2;
-    }
-
-    .footer-right {
-      flex: 1 1 30%;
-      text-align: right;
-      order: 3;
-    }
-
-    .footer-nav a {
-      color: var(--light);
-      text-decoration: underline;
-      transition: color 0.3s ease;
-      margin: 0 0.3rem;
-    }
-
-    .footer-nav a:hover {
-      color: var(--light);
-    }
-
-    .footer-link {
-      color: var(--light);
-      text-decoration: underline;
-      font-weight: 600;
-    }
-
-    .footer-link:hover {
-      background-color: transparent;
-      color: #fff;
-      text-decoration: underline;
-    }
-    .footer-nav a.rgpd {
-      text-decoration: underline;
-      color: var(--accent);
-    }
-
-    .confidentialite {
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 1rem 2rem;
-    }
-    .policy-header {
-      margin: 2rem 0;
-      text-align: center;
-    }
+  
     .card-wrapper {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
       margin-bottom: 3rem;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
     }
+  
     .card {
       background: white;
       border-radius: 8px;
       padding: 2rem;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      width: 300px;
+      flex-shrink: 0;
     }
+  
+    /* Packs */
+    .pack {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 2rem;
+    }
+  
+    /* Contact */
+    #contact {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 2rem;
+    }
+  
+    /* Spacer */
+    .spacer {
+      flex-grow: 1;
+      max-height: 2rem;
+      width: 100%;
+    }
+  
+    /* Footer */
+      .footer-row {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        text-align: left;
+      }
+      .footer-nav {
+        flex: 0 0 auto;
+        justify-content: flex-start;
+        margin: 0;
+        gap: 0.5rem;
+      }
+      .footer-link-container {
+        flex: 0 0 auto;
+        margin: 0;
+        text-align: center;
+      }
+      .footer-info {
+        flex: 0 0 auto;
+        align-items: flex-end;
+        text-align: right;
+        margin: 0;
+        flex-direction: row; /* Ici : on passe en ligne */
+        gap: 1rem; /* Espace entre les deux éléments */
+      }
+      footer nav {
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+      .footer-link {
+        margin-top: 0;
+      }
+  
+    /* Confidentialité */
+    .confidentialite .card-wrapper {
+      grid-template-columns: 1fr 1fr;
+    }
+    .confidentialite .card {
+      max-width: 340px;
+    }
+  
+    .policy-header {
+      margin: 2rem 0;
+      text-align: center;
+    }
+  
+    /* Bouton retour */
     .btn-retour {
       display: block;
       margin: 0 auto;
@@ -892,8 +871,9 @@
       text-align: center;
       transition: background-color 0.3s;
     }
+  
     .btn-retour:hover {
       background-color: var(--primary-dark);
     }
   }
-}
+}  
