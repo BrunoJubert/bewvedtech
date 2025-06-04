@@ -680,6 +680,17 @@
     text-align: center;
     margin-bottom: 2rem;
   }
+  .policy-header h1 {
+    font-size: 2rem;
+    color: var(--primary-dark);
+    margin-bottom: 0.5rem;
+  }
+
+  .confidentialite h2 {
+    font-size: 1.5rem;
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+  }
 
   .confidentialite .card {
     margin-bottom: 1.5rem;
@@ -706,6 +717,15 @@
 
   .btn-retour:hover {
     background-color: var(--primary-dark);
+  }
+
+  .adress {
+    font-size: 1rem;
+    color: var(--primary-dark);
+    text-align: center;
+    margin-top: 1rem;
+    border-top: var(--primary-dark) 1px solid;
+    padding-top: 1rem;
   }
 
   /* Responsive */
