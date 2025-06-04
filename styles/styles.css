@@ -582,11 +582,14 @@
   }
 
  /* Footer */
-footer {
+ footer {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 2rem 1rem;
   background-color: var(--primary-dark);
   color: white;
-  padding: 2rem 1rem;
   font-size: 0.9rem;
+  margin: 0;
 }
 
 .footer-row {
@@ -684,7 +687,7 @@ footer nav a:hover {
 }
 
 .confidentialite .card {
-  min-height: 340px; /* même hauteur partout */
+  min-height: 340px; 
   width: 100%;
   max-width: 350px;
   margin-left: auto;
@@ -810,13 +813,11 @@ footer nav a:hover {
     }
   
     /* Footer */
-      .footer-row {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: nowrap;
-        text-align: left;
-      }
+    .footer-row {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
       .footer-nav {
         flex: 0 0 auto;
         justify-content: flex-start;
@@ -833,8 +834,8 @@ footer nav a:hover {
         align-items: flex-end;
         text-align: right;
         margin: 0;
-        flex-direction: row; /* Ici : on passe en ligne */
-        gap: 1rem; /* Espace entre les deux éléments */
+        flex-direction: row; 
+        gap: 1rem; 
       }
       footer nav {
         margin-bottom: 0;
