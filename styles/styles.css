@@ -783,7 +783,6 @@ footer nav a:hover {
     }
   
     .card {
-      background: white;
       border-radius: 8px;
       padding: 2rem;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -797,7 +796,10 @@ footer nav a:hover {
       margin: 3rem auto;
       padding: 2rem;
     }
-  
+    
+    .synthesis-card {
+      width: 800px;
+    }
     /* Contact */
     #contact {
       max-width: 800px;
