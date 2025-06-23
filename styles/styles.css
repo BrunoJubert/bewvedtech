@@ -157,6 +157,7 @@
 
   /* Hero Section */
   .hero {
+    margin-top: 80px;
     position: relative;
     height: 100vh;
     background-attachment: fixed;
