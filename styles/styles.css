@@ -784,6 +784,11 @@ footer nav a:hover {
   margin-bottom: 0;
 }
 
+.confidentialite {
+  margin-top: 80px; /* adapte la valeur à la hauteur réelle de ton header */
+}
+
+
 .btn-retour {
   display: block; 
   margin: 2rem auto 2rem auto;
