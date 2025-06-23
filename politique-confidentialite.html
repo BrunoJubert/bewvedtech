@@ -29,7 +29,7 @@
 
     <!-- Feuilles de styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link rel="stylesheet" href="./styles/styles.min.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
 
     <!-- Canonical -->
     <link rel="canonical" href="https://brunojubert.github.io/bewvedtech/politique-confidentialite.html" />
@@ -37,11 +37,25 @@
 
 
 <body>
-    <header>
-        <a href="index.html" class="header-logo-link">
-            <img src="./assets/logo.png" alt="logo Bewved Tech" class="header-logo">
-        </a>
-        <p class="webeco">Sites web éco-conçus & efficaces</p>
+
+    <header class="main-header">
+        <div class="header-row">
+            <a href="index.html" class="header-logo-link">
+                <img src="./assets/logo.png" alt="logo Bewved Tech" class="header-logo">
+            </a>
+            <p class="webeco">Sites web éco-conçus & efficaces</p>
+        </div>
+        <div class="dropdown">
+            <button class="dropdown-btn">Menu &#x25BC;</button>
+            <div class="dropdown-content">
+                <a href="./index.html#starter">Pack Starter</a>
+                <a href="./index.html#pro">Pack Pro</a>
+                <a href="./index.html#master">Pack Master</a>
+                <a href="./index.html#maintenance">Maintenance</a>
+                <a href="./index.html#contact">Contact</a>
+                <a href="./politique-confidentialite.html">RGPD</a>
+            </div>
+        </div>
     </header>
     
 
@@ -138,7 +152,7 @@
       
       
     
-    <script src="./js/script.min.js"></script>
+    <script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.9.9/tarteaucitron.js"></script>
     <script src="./js/cookies.js"></script>
 </body>
